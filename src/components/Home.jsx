@@ -12,7 +12,7 @@ function Home() {
     <>
       <div
         name="Home"
-        className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-20 "
+        className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-20 mb-10 bg-slate-100 mt-10"
       >
         <div className="flex flex-col md:flex-row">
           <div className=" md:w-1/2 mt-12 md:mt-24 space-y-2 order-2 md:order-1 ">
@@ -45,22 +45,22 @@ function Home() {
   <h1 className="font-bold md:mb-3 text-xl md:text-2xl mb-6 text-violet-700">Available On</h1> {/* Added margin below */}
   <ul className="flex space-x-5">
     <li>
-      <a href="" target="_blank">
+      <a href=" https://www.linkedin.com/in/nilesh-sabe" target="_blank">
         <FaLinkedin className="text-3xl md:text-4xl cursor-pointer" /> {/* Increased icon size */}
       </a>
     </li>
     <li>
-      <a href="" target="_blank">
+      <a href="8600019091" target="_blank">
         <FaSquareWhatsapp className="text-3xl md:text-4xl cursor-pointer" /> {/* Increased icon size */}
       </a>
     </li>
     <li>
-      <a href="" target="_blank">
+      <a href="https://www.instagram.com/entrepreneur_nilesh_sabe?igsh=MWhwZmNkbHBla3Q1" target="_blank">
         <FaSquareInstagram className="text-3xl md:text-4xl cursor-pointer" /> {/* Increased icon size */}
       </a>
     </li>
     <li>
-      <a href="" target="_blank">
+      <a href="https://www.facebook.com/nil.sabe.1/about" target="_blank">
         <FaFacebookSquare className="text-3xl md:text-4xl cursor-pointer" /> {/* Increased icon size */}
       </a>
     </li>
@@ -78,8 +78,7 @@ function Home() {
           </div>
         </div>
       </div>
-
-      <hr />
+      <hr/>
     </>
   );
 }

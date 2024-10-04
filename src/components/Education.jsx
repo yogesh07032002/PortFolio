@@ -8,10 +8,10 @@ function Education() {
         <h1 className="text-3xl font-bold mb-5 text-blue-700 ">Education</h1>
        <h2 className="font-bold text-red-700"> Bachelor of Engineering(B.E.)</h2>
        <p >2015 - 2018<br></br>Prof Ram Meghe College Of Engineering and Management Badnera, Amaravati.</p><br/>
-       <h2 className="font-bold text-red-700"> Bachelor of Engineering(B.E.)</h2>
-       <p className="text-black">2015 - 2018<br></br>Prof Ram Meghe College Of Engineering and Management Badnera, Amaravati.</p><br/>
-       <h2 className="font-bold text-red-700"> Bachelor of Engineering(B.E.)</h2>
-       <p>2015 - 2018<br></br>Prof Ram Meghe College Of Engineering and Management Badnera, Amaravati.</p><br/>
+       <h2 className="font-bold text-red-700">Polytechnic diploma</h2>
+       <p className="text-black">2012 - 2015<br></br>Government Poly. Amaravati</p><br/>
+       <h2 className="font-bold text-red-700"> Higher Secondary School</h2>
+       <p>2011 - 2012<br></br>Amaravati University</p><br/>
       </div>
       <hr />
     </>

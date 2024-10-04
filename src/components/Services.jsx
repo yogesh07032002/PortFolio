@@ -4,7 +4,6 @@ import App from '../../public/App.jpg';
 import Cloud from '../../public/Cloud.jpg';
 import CRM from '../../public/CRM.jpg';
 import Digital from '../../public/Digital.jpg';
-import SEO from '../../public/SEO.jpg';
 import Software from '../../public/Software.jpg';
 import Web from '../../public/Web.jpg';
 
@@ -35,11 +34,7 @@ function Services() {
             logo: Cloud,
             name: "Cloud Services"
         },
-        {
-            id: 6,
-            logo: SEO,
-            name: "SEO Management"
-        },
+       
         {
             id: 7,
             logo: Web,
@@ -57,7 +52,7 @@ function Services() {
                             <div key={id} className="border p-4 rounded-md cursor-pointer hover:scale-110 duration-300 shadow-md">
                                 <img src={logo} alt={name} className="h-40 w-full object-cover mb-4" /> {/* Ensure image is styled */}
                                 <div className="text-xl font-semibold">{name}</div>
-                                <p className="mt-2 text-pink-700">At Swiftnlift IT TECH, we offer comprehensive solutions including software development, web and application development, CRM systems, cloud services, and digital marketing to drive your business growth and digital transformation seamlessly.</p>
+                                <p className="mt-2 text-gray-800">At Swiftnlift IT TECH, we offer comprehensive solutions including software development, web and application development, CRM systems, cloud services, and digital marketing to drive your business growth and digital transformation seamlessly.</p>
                             </div>
                         ))}
                     </div>

@@ -9,7 +9,7 @@ function Footer() {
   return (
    <>
     <hr />
-   <footer name='Footer' className='py-12'>
+   <footer name='Footer' className='py-12 bg-slate-400' >
     <div className="max-w-screen-2xl container mx-auto px-4 md:px-20 ">
         <div className=' flex flex-col items-center justify-center'>
             <div className='flex space-x-4'>

@@ -8,6 +8,7 @@ import Services from './components/Services'
 import Footer from './components/Footer'
 import { Contact } from './components/Contact'
 import { Toaster } from 'react-hot-toast'
+import FieldsOfExpertization from './components/FieldsOfExpertization'
 
 function App() {
   return (
@@ -15,9 +16,10 @@ function App() {
    <div>
      <Navbar/>
     <Home/>
-    <About/>
+    <About />
     <Education/>
     <Services/>
+    <FieldsOfExpertization/>
     <Contact/>
     <Footer/>
    </div>
