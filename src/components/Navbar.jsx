@@ -1,9 +1,10 @@
-// eslint-disable-next-line no-unused-vars
 import React, { useState } from "react";
-import pic from "../../public/Boss02.jpg";
+
 import { IoClose } from "react-icons/io5";
+import {Link} from 'react-scroll';
 import { MdOutlineMenu } from "react-icons/md";
-import {Link } from 'react-scroll';
+import pic from "../../public/Boss02.jpg";
+
 function Navbar() {
   const [menu, setMenu] = useState(false);
   const navItems=[
@@ -32,13 +33,13 @@ function Navbar() {
 
   return (
     <>
-      <div className="max-w-screen-2xl container mx-auto px-4 md:px-20 h-16 shadow-md fixed top-0 left-0 right-0 z-50 bg-white">
+      <div className="max-w-screen-2xl container mx-auto px-4 md:px-20 h-16 shadow-md fixed top-0 left-0 right-0 z-50 bg-white hover:bg-slate-300">
         <div className="flex justify-between items-center h-16">
           <div className="flex space-x-2">
             <img src={pic} className="h-12 w-12 rounded-full" alt="profile" />
             <h1 className="font-semibold text-xl cursor-pointer">
               Nilesh Sabe
-              <p className="text-sm">Founder And CEO</p>
+              <p className="text-sm text-rose-500">Founder And CEO</p>
             </h1>
           </div>
           {/* Desktop Nav */}

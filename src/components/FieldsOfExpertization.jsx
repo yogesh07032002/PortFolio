@@ -1,4 +1,3 @@
-// eslint-disable-next-line no-unused-vars
 import React from 'react';
 import m from '../../public/m.jpg';
 import n from '../../public/n.jpg';
@@ -46,10 +45,10 @@ function FieldsOfExpertization() {
         <>
             <div name='Services' className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-16 mt-5">
                 <div>
-                    <h1 className='text-3xl font-bold mb-5 text-blue-700'>Fields Of Expertization</h1>
+                    <h1 className='text-3xl font-bold mb-5 text-blue-700 text-center md:text-start'>Fields Of Expertization</h1>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8"> {/* Added grid layout for better alignment */}
                         {cardItem.map(({ id, logo, name }) => (
-                            <div key={id} className="border p-4 rounded-md cursor-pointer hover:scale-110 duration-300 shadow-md">
+                            <div key={id} className="border p-4 rounded-md cursor-pointer hover:scale-110 duration-300 shadow-md text-center md:text-start">
                                 <img src={logo} alt={name} className="h-40 w-full object-cover mb-4" /> {/* Ensure image is styled */}
                                 <div className="text-xl font-semibold">{name}</div>
                                 <p className="mt-2 text-pink-700"> </p>
