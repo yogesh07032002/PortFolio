@@ -9,34 +9,35 @@ export const Contact = () => {
     handleSubmit,
     formState: { errors },
   } = useForm();
-  const onSubmit =async (data) => {
-    const userInfo={
-      name:data.name,
-      email:data.email,
-      message:data.message
-    }
+  const onSubmit = async (data) => {
+    const userInfo = {
+      name: data.name,
+      email: data.email,
+      message: data.message,
+    };
     try {
-     await axios.post("https://getform.io/f/agdygrjb",userInfo)
-     toast.success("Your Message Has Been Sent")
-      
+      await axios.post("https://getform.io/f/agdygrjb", userInfo);
+      toast.success("Your Message Has Been Sent");
     } catch (error) {
-      console.log(error)
-      toast.error("Something went Wrong")
+      console.log(error);
+      toast.error("Something went Wrong");
     }
-  }
+  };
 
   return (
     <div
       name="Contact"
       className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-16 "
     >
-      <h1 className="text-3xl font-bold mb-4 text-blue-700 text-center md:text-start">Contact Me</h1>
+      <h1 className="text-3xl font-bold mb-4 text-blue-700 text-center md:text-start">
+        Contact Me
+      </h1>
       <span className="text-red-700 text-center md:text-start">
         Please Fill Out The Form To Contact Me
       </span>
       <div className="flex flex-col items-center justify-center mt-5 px-5">
         <form
-        onSubmit={handleSubmit(onSubmit)}
+          onSubmit={handleSubmit(onSubmit)}
           // action="https://getform.io/f/agdygrjb"
           // method="POST"
           className="bg-cyan-300 w-96 px-8 py-6 rounded-xl border-2 border-black "

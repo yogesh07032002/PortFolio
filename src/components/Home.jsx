@@ -29,42 +29,61 @@ function Home() {
             </div>
             <br />
             <p className="   text-justify">
-              I am Founder & CEO of ArrayLogic Softwares Pvt. Ltd., SwiftNLift Tech falls
-              under cutting-edge technologies. SwiftNLift Tech focuses on
-              utilizing innovative digital solutions that can help a business
-              support its performance across industries.<br></br><br/> The company ensures to
-              keep abreast of technological trends while working to deliver
-              tailored solutions for the changing needs of businesses in this
-              modern digital world. 
+              I am Founder & CEO of ArrayLogic Softwares Pvt. Ltd., SwiftNLift
+              Tech falls under cutting-edge technologies. SwiftNLift Tech
+              focuses on utilizing innovative digital solutions that can help a
+              business support its performance across industries.<br></br>
+              <br /> The company ensures to keep abreast of technological trends
+              while working to deliver tailored solutions for the changing needs
+              of businesses in this modern digital world.
             </p>
 
             <br></br>
             {/*Social Media */}
             <div className="space-y-2 justify-between md:space-y-0">
-  <h1 className="font-bold md:mb-3 text-xl  text-center md:text-left md:text-2xl mb-6 text-orange-500">Available On</h1> {/* Added margin below */}
-  <ul className= "flex space-x-5 justify-center md:justify-start ">
-    <li >
-      <a href=" https://www.linkedin.com/in/nilesh-sabe" target="_blank">
-        <FaLinkedin className="text-3xl md:text-4xl cursor-pointer bg-cyan-400" /> {/* Increased icon size */}
-      </a>
-    </li>
-    <li>
-      <a target="_blank" href="https://api.whatsapp.com/send?phone=8600019091">
-        <FaSquareWhatsapp className="text-3xl md:text-4xl cursor-pointer bg-cyan-400" /> {/* Increased icon size */}
-      </a>
-    </li>
-    <li>
-      <a href="https://www.instagram.com/entrepreneur_nilesh_sabe?igsh=MWhwZmNkbHBla3Q1" target="_blank">
-        <FaSquareInstagram className="text-3xl md:text-4xl cursor-pointer bg-cyan-400" /> {/* Increased icon size */}
-      </a>
-    </li>
-    <li>
-      <a href="https://www.facebook.com/nil.sabe.1/about" target="_blank">
-        <FaFacebookSquare className="text-3xl md:text-4xl bg-cyan-400 cursor-pointer" /> {/* Increased icon size */}
-      </a>
-    </li>
-  </ul>
-</div>
+              <h1 className="font-bold md:mb-3 text-xl  text-center md:text-left md:text-2xl mb-6 text-orange-500">
+                Available On
+              </h1>{" "}
+              {/* Added margin below */}
+              <ul className="flex space-x-5 justify-center md:justify-start ">
+                <li>
+                  <a
+                    href=" https://www.linkedin.com/in/nilesh-sabe"
+                    target="_blank"
+                  >
+                    <FaLinkedin className="text-3xl md:text-4xl cursor-pointer bg-cyan-400" />{" "}
+                    {/* Increased icon size */}
+                  </a>
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://api.whatsapp.com/send?phone=8600019091"
+                  >
+                    <FaSquareWhatsapp className="text-3xl md:text-4xl cursor-pointer bg-cyan-400" />{" "}
+                    {/* Increased icon size */}
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/entrepreneur_nilesh_sabe?igsh=MWhwZmNkbHBla3Q1"
+                    target="_blank"
+                  >
+                    <FaSquareInstagram className="text-3xl md:text-4xl cursor-pointer bg-cyan-400" />{" "}
+                    {/* Increased icon size */}
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.facebook.com/nil.sabe.1/about"
+                    target="_blank"
+                  >
+                    <FaFacebookSquare className="text-3xl md:text-4xl bg-cyan-400 cursor-pointer" />{" "}
+                    {/* Increased icon size */}
+                  </a>
+                </li>
+              </ul>
+            </div>
 
             <div></div>
           </div>
@@ -77,10 +96,9 @@ function Home() {
           </div>
         </div>
       </div>
-      <hr/>
+      <hr />
     </>
   );
 }
-
 
 export default Home;

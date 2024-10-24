@@ -1,35 +1,35 @@
 import React, { useState } from "react";
 
 import { IoClose } from "react-icons/io5";
-import {Link} from 'react-scroll';
+import { Link } from "react-scroll";
 import { MdOutlineMenu } from "react-icons/md";
 import pic from "../../public/Boss02.jpg";
 
 function Navbar() {
   const [menu, setMenu] = useState(false);
-  const navItems=[
+  const navItems = [
     {
-        id:1,
-        text:"Home"
+      id: 1,
+      text: "Home",
     },
     {
-        id:2,
-        text:"About"
+      id: 2,
+      text: "About",
     },
 
     {
-        id:3,
-        text:"Education"
+      id: 3,
+      text: "Education",
     },
     {
-        id:4,
-        text:"Services"
+      id: 4,
+      text: "Services",
     },
     {
-        id:5,
-        text:"Contact"
+      id: 5,
+      text: "Contact",
     },
-  ]
+  ];
 
   return (
     <>
@@ -45,23 +45,30 @@ function Navbar() {
           {/* Desktop Nav */}
           <div>
             <ul className="hidden md:flex space-x-8">
-              {
-                navItems.map(({id,text})=>(
-                            <li className="hover:scale-105 duration-200 cursor-pointer font-semibold text-black " key={id}>
-                              <Link to={text}
-                              smooth={true}
-                              duration={500}
-                              offset={-70}
-                              activeClass="active"
-                              >{text}</Link>
-                              </li>
-                ))
-              }
+              {navItems.map(({ id, text }) => (
+                <li
+                  className="hover:scale-105 duration-200 cursor-pointer font-semibold text-black "
+                  key={id}
+                >
+                  <Link
+                    to={text}
+                    smooth={true}
+                    duration={500}
+                    offset={-70}
+                    activeClass="active"
+                  >
+                    {text}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
           {/* Mobile Menu Icon */}
-          <div onClick={() => setMenu(!menu)} className="md:hidden text-2xl cursor-pointer">
+          <div
+            onClick={() => setMenu(!menu)}
+            className="md:hidden text-2xl cursor-pointer"
+          >
             {menu ? <IoClose size={24} /> : <MdOutlineMenu size={24} />}
           </div>
         </div>
@@ -69,24 +76,27 @@ function Navbar() {
         {/* Mobile Nav */}
         {menu && (
           <div className="bg-white">
-          <div className="md:hidden flex flex-col h-screen items-center justify-center text-xl space y-4">
-            <ul className="space-y-4">
-            {
-                navItems.map(({id,text})=>(
-                            <li className="hover:scale-105 duration-200  font-semibold cursor-pointer" key={id}>
-                               <Link
-                               onClick={() => setMenu(!menu)}
-                                to={text}
-                              smooth={true}
-                              duration={500}
-                              offset={-70}
-                              activeClass="active"
-                              >{text}</Link>
-                            </li>
-                ))
-              }
-            </ul>
-          </div>
+            <div className="md:hidden flex flex-col h-screen items-center justify-center text-xl space y-4">
+              <ul className="space-y-4">
+                {navItems.map(({ id, text }) => (
+                  <li
+                    className="hover:scale-105 duration-200  font-semibold cursor-pointer"
+                    key={id}
+                  >
+                    <Link
+                      onClick={() => setMenu(!menu)}
+                      to={text}
+                      smooth={true}
+                      duration={500}
+                      offset={-70}
+                      activeClass="active"
+                    >
+                      {text}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         )}
       </div>
