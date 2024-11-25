@@ -82,7 +82,7 @@ This is a fully responsive, performance-optimized portfolio website built with m
 
 
  
-Development & Deployment
+### Development & Deployment
 This project uses Vite for development and deployment:
 
 Development: npm run dev spins up a fast local development server with hot module replacement (HMR).
